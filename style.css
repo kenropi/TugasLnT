@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+header h1 {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#about-me img {
+    transition: transform 0.5s ease;
+}
+
+#about-me img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    /* Atur ulang layout untuk tablet */
+}
+
+@media screen and (max-width: 480px) {
+    /* Atur ulang layout untuk smartphone */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#welcomeText {
+    animation: fadeIn 2s ease-in-out;
+}
+.profile-pic {
+    transition: transform 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+.bounce { animation: bounce 2s infinite; }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container > * {
+    max-width: 100%; 
+  }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; 
+}
